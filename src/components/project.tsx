@@ -5,7 +5,7 @@ const projectData1 = {
   description: 'An app for school shopping management, facilitating smooth transactions for users.',
   tags: ['Python', 'Apps'],
   githubLink: 'https://github.com/NimonHiya/Kasir',
-  imageUrl: 'Kasir.png',
+  imageUrl: '/Kasir.png', // Updated path
 };
 
 const projectData2 = {
@@ -13,7 +13,7 @@ const projectData2 = {
   description: 'An application for managing hotel bookings efficiently.',
   tags: ['JavaScript', 'React'],
   githubLink: 'https://github.com/NimonHiya/BookingHotel',
-  imageUrl: 'bookinghotel.png',
+  imageUrl: '/bookinghotel.png', // Updated path
 };
 
 const projectData3 = {
@@ -21,7 +21,7 @@ const projectData3 = {
   description: 'A guide for configuring Burp Suite with FoxyProxy for web security testing.',
   tags: ['Security', 'Web'],
   githubLink: 'https://github.com/NimonHiya/Setup-Burpsuite',
-  imageUrl: 'setupburpsuite.png',
+  imageUrl: '/setupburpsuite.png', // Updated path
 };
 
 const projectData4 = {
@@ -29,7 +29,7 @@ const projectData4 = {
   description: 'A store management application for efficient transactions and inventory.',
   tags: ['JavaScript', 'Node.js'],
   githubLink: 'https://github.com/NimonHiya/Toko',
-  imageUrl: 'toko.png',
+  imageUrl: '/toko.png', // Updated path
 };
 
 const projectData5 = {
@@ -37,7 +37,7 @@ const projectData5 = {
   description: 'A personalized store application built with modern web technologies.',
   tags: ['React', 'Node.js'],
   githubLink: 'https://github.com/NimonHiya/Toko_Ku',
-  imageUrl: 'tokoku.png',
+  imageUrl: '/tokoku.png', // Updated path
 };
 
 const projectData6 = {
@@ -45,7 +45,7 @@ const projectData6 = {
   description: 'A project developed for UTS, showcasing various development techniques.',
   tags: ['JavaScript', 'React'],
   githubLink: 'https://github.com/NimonHiya/uts',
-  imageUrl: 'uts.png',
+  imageUrl: '/uts.png', // Updated path
 };
 
 const App = () => {

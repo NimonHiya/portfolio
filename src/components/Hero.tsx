@@ -42,7 +42,7 @@ export default function Hero() {
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
           Juan<span className="text-red-500">Farrel</span>
         </h1>
-        <p className="text-xl mb-8">I'm a {typedRole}</p> 
+        <p className="text-xl mb-8">I&apos;m a {typedRole}</p> 
         <div className="flex justify-center space-x-6">
           <a href="https://github.com/NimonHiya" className="text-2xl hover:text-red-500 transition-colors" target="_blank" rel="noopener noreferrer">
             <FaGithub />

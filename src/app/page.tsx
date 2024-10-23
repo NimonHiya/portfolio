@@ -1,12 +1,12 @@
-import FloatingShapes from '@/components/FloatingShapes'
 import Hero from '@/components/Hero'
 import Layout from '@/components/Layout'
+import Background from '@/components/Background'
 
 export default function Home() {
   return (
     <Layout>
       <Hero />
-      <FloatingShapes/>
+      <Background />
     </Layout>
   )
 }

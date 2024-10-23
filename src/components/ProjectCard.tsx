@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface ProjectCardProps {
   title: string;
@@ -16,12 +17,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   imageUrl,
 }) => {
   return (
-    <div className="project-card rounded-lg shadow-md p-6 bg-white max-w-sm transition-transform transform hover:scale-105 hover:shadow-lg"> {/* Added transition and transform for animation */}
-      <img
-        src={imageUrl}
-        alt={title}
-        className="project-card-image rounded-lg mb-4 h-40 w-full object-cover"
-      />
+    <div className="project-card rounded-lg shadow-md p-6 bg-white max-w-sm transition-transform transform hover:scale-105 hover:shadow-lg">
+      <div className="relative h-40 w-full mb-4"> {/* Wrapper div for Image */}
+        <Image
+          src={imageUrl}
+          alt={title}
+          fill
+          className="rounded-lg object-cover"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+      </div>
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-gray-700 mb-3 text-base">{description}</p>
       <div className="project-card-tags flex flex-wrap gap-2 mb-3">
