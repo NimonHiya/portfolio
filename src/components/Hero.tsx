@@ -1,10 +1,11 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import Image from 'next/image';
 
 export default function Hero() {
-  const roles = ['developer', 'penetration tester']; // Define roles to cycle through
+  const roles = useMemo(() => ['developer', 'penetration tester'], []);
   const [roleIndex, setRoleIndex] = useState(0); // Track the current role index
   const [typedRole, setTypedRole] = useState(''); // Current typed role
   const [isDeleting, setIsDeleting] = useState(false); // Flag to check if we are deleting characters
@@ -35,9 +36,12 @@ export default function Hero() {
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="text-center">
-        <img 
-          src="profile.jpg" 
-          className="w-32 h-32 rounded-full mx-auto mb-8 object-cover" 
+        <Image 
+          src="/profile.jpg" 
+          alt="Profile Picture"
+          width={128}
+          height={128}
+          className="rounded-full mx-auto mb-8 object-cover" 
         />
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
           Juan<span className="text-red-500">Farrel</span>
@@ -45,13 +49,13 @@ export default function Hero() {
         <p className="text-xl mb-8">I&apos;m a {typedRole}</p> 
         <div className="flex justify-center space-x-6">
           <a href="https://github.com/NimonHiya" className="text-2xl hover:text-red-500 transition-colors" target="_blank" rel="noopener noreferrer">
-            <FaGithub />
+        <FaGithub />
           </a>
           <a href="https://www.linkedin.com/in/juan-farrel-88b66a236/" className="text-2xl hover:text-red-500 transition-colors" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin />
+        <FaLinkedin />
           </a>
           <a href="mailto:nimonhiya@gmail.com" className="text-2xl hover:text-red-500 transition-colors">
-            <FaEnvelope />
+        <FaEnvelope />
           </a>
         </div>
       </div>

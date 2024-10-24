@@ -27,7 +27,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
+      <h3 className="text-xl font-semibold mb-2 text-black">{title}</h3>
       <p className="text-gray-700 mb-3 text-base">{description}</p>
       <div className="project-card-tags flex flex-wrap gap-2 mb-3">
         {tags.map((tag) => (
