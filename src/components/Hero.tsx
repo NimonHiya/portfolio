@@ -49,13 +49,13 @@ export default function Hero() {
         <p className="text-xl mb-8">I&apos;m a {typedRole}</p> 
         <div className="flex justify-center space-x-6">
           <a href="https://github.com/NimonHiya" className="text-2xl hover:text-red-500 transition-colors" target="_blank" rel="noopener noreferrer">
-        <FaGithub />
+            <FaGithub />
           </a>
           <a href="https://www.linkedin.com/in/juan-farrel-88b66a236/" className="text-2xl hover:text-red-500 transition-colors" target="_blank" rel="noopener noreferrer">
-        <FaLinkedin />
+            <FaLinkedin />
           </a>
           <a href="mailto:nimonhiya@gmail.com" className="text-2xl hover:text-red-500 transition-colors">
-        <FaEnvelope />
+            <FaEnvelope />
           </a>
         </div>
       </div>

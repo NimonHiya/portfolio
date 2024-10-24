@@ -55,7 +55,7 @@ export default function Navbar() {
               About
             </Link>
             <Link href="/services" className="block hover:text-red-500 transition-colors">
-              SKILLS
+              Skills
             </Link>
             <Link href="/project" className="block hover:text-red-500 transition-colors">
               Projects
